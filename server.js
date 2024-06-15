@@ -26,16 +26,16 @@ server.use(bodyParser.json());
 server.use(cors())
 server.use(express.json())
 
-// Connect to MongoDB
+// Connect to MongoDB*********
 mongoose.connect(process.env.MONGO_DB_URL, {
     autoIndex: true
 });
 
-// Route to create a new rating
+// Route to create a new rating***********************************************
 server.post('/rate', async (req, res) => {
   const { user, rating, comment } = req.body;
 
-  // Validate rating value
+  // Validate rating value*************************************************
   if (rating < 1 || rating > 5) {
     return res.status(400).send('Rating must be between 1 and 5');
   }
@@ -49,7 +49,7 @@ server.post('/rate', async (req, res) => {
   }
 });
 
-// Route to get all ratings
+// Route to get all ratings*************************************************************
 server.get('/ratings', async (req, res) => {
   try {
     const ratings = await Rating.find();
@@ -59,7 +59,7 @@ server.get('/ratings', async (req, res) => {
   }
 });
 
-//data to send to the frontend
+//data to send to the frontend********************************************************
 const formatDatatoSend =(user) =>{
 
   const access_token = jwt.sign({ id: user._id}, process.env.SECRET_ACCESS_KEY  )
