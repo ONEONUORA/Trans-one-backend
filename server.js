@@ -79,6 +79,8 @@ const generateUsername = async (email) =>{
   return username
 }
 
+//google auth route
+
 //Route to signup
 server.post("/signup" , (req, res) =>{
 
