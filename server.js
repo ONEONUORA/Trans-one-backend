@@ -10,6 +10,9 @@ import jwt from "jsonwebtoken"
 import admin from "firebase-admin"
 import serviceAccountKey from "./transone-b6bc0-firebase-adminsdk-33fpu-86b9a03562.json"assert{type: 'json'}
 import {getAuth} from "firebase-admin/auth"
+import fs from "fs"
+import path from "path"
+import { fileURLToPath } from 'url';
 
 //schema***************************************
 import Rating from "./schema/Rating.js";
@@ -66,6 +69,55 @@ server.get('/ratings', async (req, res) => {
     res.status(500).send(error.message);
   }
 });
+
+
+//route to get all emergency contact**********************************************
+
+// Create __dirname equivalent for ES module
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+
+// Load emergency contacts data
+const contactsPath = path.join(__dirname, 'data', 'emergencyContacts.json');
+const emergencyContacts = JSON.parse(fs.readFileSync(contactsPath, 'utf8'));
+
+
+// API endpoint to get all emergency contacts
+server.get('/api/emergency-contacts', (req, res) => {
+  res.json(emergencyContacts);
+});
+
+
+// API endpoint to get emergency contact for a specific country
+server.get('/api/emergency-contacts/:country', (req, res) => {
+  const country = req.params.country.toLowerCase();
+  const contact = emergencyContacts.find(c => c.country.toLowerCase() === country);
+  if (contact) {
+      res.json(contact);
+  } else {
+      res.status(404).json({ message: 'Country not found' });
+  }
+});
+
+
+//Routes to get healths issues*****************************************************
+
+server.get('/api/health-issues', (req, res) => {
+  const filePath = path.join(__dirname, 'data', 'healthIssues.json');
+  fs.readFile(filePath, 'utf8', (err, data) => {
+    if (err) {
+      console.error('Error reading the file:', err);
+      res.status(500).send('Internal Server Error');
+      return;
+    }
+    res.json(JSON.parse(data));
+  });
+});
+
+
+
+
 
 //data to send to the frontend********************************************************
 const formatDatatoSend =(user) =>{

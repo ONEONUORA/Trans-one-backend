@@ -1,0 +1,56 @@
+
+
+
+[
+    {
+      "issue": "Deep Vein Thrombosis (DVT)",
+      "symptoms": ["Swelling in one or both legs", "Pain or tenderness in the leg, often starting in the calf", "Warmth in the affected area", "Red or discolored skin"],
+      "remedies": ["Move around the cabin periodically and do leg exercises while seated", "Stay hydrated by drinking plenty of water", "Wear compression stockings to improve blood flow", "Avoid crossing your legs while sitting", "Consult a doctor if you have risk factors for DVT, and consider taking prescribed medications if recommended"]
+    },
+    {
+      "issue": "Dehydration",
+      "symptoms": ["Dry mouth and throat", "Thirst", "Dry skin", "Fatigue", "Dizziness or lightheadedness", "Dark-colored urine"],
+      "remedies": ["Drink plenty of water before and during the flight", "Avoid alcohol and caffeine, which can contribute to dehydration", "Use a moisturizing nasal spray and lip balm to keep nasal passages and lips hydrated", "Consider using a hydrating facial mist"]
+    },
+    {
+      "issue": "Jet Lag",
+      "symptoms": ["Fatigue and tiredness", "Difficulty concentrating", "Insomnia or disturbed sleep", "Irritability or mood changes", "Digestive issues, such as constipation or diarrhea"],
+      "remedies": ["Gradually adjust your sleep schedule to the destination time zone a few days before traveling", "Get plenty of sunlight upon arrival to help reset your internal clock", "Stay hydrated and eat light meals", "Avoid alcohol and caffeine close to bedtime", "Consider using sleep aids or melatonin supplements (consult a doctor before use)"]
+    },
+    {
+      "issue": "Motion Sickness",
+      "symptoms": ["Nausea", "Vomiting", "Dizziness", "Sweating", "Pale skin", "Increased salivation"],
+      "remedies": ["Choose a seat over the wing where there is less motion", "Keep your eyes on a fixed point or the horizon", "Avoid reading or watching screens during turbulence", "Eat light, non-greasy meals before and during the flight", "Use over-the-counter medications like dimenhydrinate (Dramamine) or consult a doctor for prescription options", "Try acupressure bands or ginger supplements"]
+    },
+    {
+      "issue": "Ear Pain/Barotrauma",
+      "symptoms": ["Ear discomfort or pain", "A feeling of fullness or pressure in the ears", "Temporary hearing loss", "Ringing in the ears (tinnitus)", "Dizziness"],
+      "remedies": ["Chew gum, suck on candy, or yawn frequently to equalize ear pressure", "Use the Valsalva maneuver (gently blowing while pinching your nose and keeping your mouth closed)", "Swallow frequently", "Use nasal decongestant sprays before takeoff and landing if you have a cold or allergies"]
+    },
+    {
+      "issue": "Respiratory Infections",
+      "symptoms": ["Coughing", "Sneezing", "Runny or stuffy nose", "Sore throat", "Fever", "Fatigue"],
+      "remedies": ["Wash your hands frequently or use hand sanitizer", "Avoid touching your face", "Stay hydrated and maintain a healthy diet to support your immune system", "Consider wearing a mask if you are in a crowded or enclosed space"]
+    },
+    {
+      "issue": "Swelling",
+      "symptoms": ["Swollen feet, ankles, and legs", "Tightness in the skin", "Reduced mobility in the affected area"],
+      "remedies": ["Move around the cabin periodically and do leg exercises while seated", "Wear compression stockings to help reduce swelling", "Elevate your feet when possible", "Stay hydrated and avoid excessive salt intake"]
+    },
+    {
+      "issue": "Headaches",
+      "symptoms": ["Pain in the head, often described as throbbing or pulsing", "Sensitivity to light and sound", "Nausea and vomiting", "Dizziness"],
+      "remedies": ["Stay hydrated by drinking plenty of water", "Avoid alcohol and caffeine", "Use over-the-counter pain relievers like ibuprofen or acetaminophen if needed", "Rest and try to relax in a comfortable position", "Use a cold compress on your forehead"]
+    },
+    {
+      "issue": "Fatigue and Muscle Stiffness",
+      "symptoms": ["General feeling of tiredness or weakness", "Aching or stiff muscles", "Reduced range of motion"],
+      "remedies": ["Stretch and move around the cabin periodically", "Do simple in-seat exercises, such as ankle circles and knee lifts", "Stay hydrated and avoid excessive caffeine and alcohol", "Get adequate rest before your flight"]
+    },
+    {
+      "issue": "Anxiety",
+      "symptoms": ["Increased heart rate", "Sweating", "Trembling or shaking", "Shortness of breath", "Nausea", "Feeling of dread or panic"],
+      "remedies": ["Practice deep breathing exercises and mindfulness techniques", "Listen to calming music or guided meditation", "Avoid caffeine and alcohol, which can increase anxiety", "Stay occupied with books, puzzles, or movies", "Consider speaking to a doctor about anti-anxiety medications if you have severe anxiety about flying"]
+    }
+  ]
+  
