@@ -8,7 +8,7 @@ import bcrypt from 'bcrypt'
 import { nanoid } from "nanoid";
 import jwt from "jsonwebtoken"
 import admin from "firebase-admin"
-import serviceAccountKey from "./transone-b6bc0-firebase-adminsdk-33fpu-86b9a03562.json"assert{type: 'json'}
+import serviceAccountKey from "./transone-file.json"assert{type: 'json'}
 import {getAuth} from "firebase-admin/auth"
 import fs from "fs"
 import path from "path"
