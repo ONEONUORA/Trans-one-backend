@@ -122,7 +122,7 @@ server.get('/api/health-issues', (req, res) => {
 //data to send to the frontend********************************************************
 const formatDatatoSend =(user) =>{
 
-  const access_token = jwt.sign({ id: user._id}, process.env.SECRET_ACCESS_KEY  )
+  const access_token = jwt.sign({ id: user._id}, process.env.ACCESS_KEY  )
     return {
       access_token,
       profile_img : user.personal_info.profile_img,
